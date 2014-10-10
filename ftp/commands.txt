@@ -1,0 +1,53 @@
+/etc/passwd (-rw-r--r--)==>
+		test1:x:1001:1001:,,,:/home/test:/bin/bash
+	==>(Form)
+		1name : 2password : 3uid : 4gid(init) : 5info : 6home_dir : 7login_shell
+	==>(Change)
+		password		-- passwd
+		info 			-- chfn
+
+/etc/shadow (-rw-r-----)==>
+		test1:$6$UNLw5ZzA$H1RnpJMlq3j9b2Bcb69dUjrjBWYHHT1:16349:0:99999:7:::
+	==>(Form)
+		1name : 2password : 3lastmodifyday: 4minpasswordperiod : 5maxpasswordperiod : 6warndaysbeforeexpire : 7inactivityperiod : 8inactiveday : 9reservefiled
+
+/etc/group (-rw-r--r--)==>
+		test1:x:1001:
+	==>(Form)
+		1name : 2password : 3gid : 4includeaccount
+	==>(Change)
+		includeaccount	--usermod
+
+/etc/gshadow(-rw-r-----)==>
+		test1:!::
+	==>(Form)
+		1name : 2passwd(!-no-gadmin) : 3gadminaccount : 4includeaccount
+
+
+Default file ==>
+		/etc/login.defs
+		/etc/default/useradd
+		/etc/skel/
+
+Commands:
+	root:
+		passwd 		==> change user password
+		chage  		==> change user password expiry information(OPTION: '-l LOGIN' : list the account's full info)
+			   			OPTION: '-d 0' will force the user change password when the first time login system!
+			   				eg.	useradd testuser
+			   					passwd testuser 
+			   					chage -d 0 testuser
+		useradd		==> create a new user or update default new user information
+		usermod		==> modify a user account
+		userdel		==> delete a user account and relate files(-r will remove with user's home directory)
+		groups		==> print the groups a user is in
+		newgrp		==> log in to a new group(change to a new effective group)
+		groupadd	==> create aa new group
+		groupmod	==> modify a group definition on the system
+		groupdel	==> delete a group
+	user:
+		finger		==> print user information
+						See also: w who 
+		chfn		==> change name and information
+		chsh		==> change login shell
+		id    		==> print real and effective user and group IDS
