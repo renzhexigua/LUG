@@ -1,0 +1,633 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+  <title>UESTC LUG Mirror site 软件源 -- Linux开源软件 系统镜像 教育网LinuxDeepin Opensuse LinuxMint Cygwin MariaDB GNU RFC-Documents Python Pypi ruby gem nodejs npm</title>
+  <meta charset="utf-8" />
+  <meta name="baidu-site-verification" content="12MAIuLEBr" />
+  <meta name="keywords" content="UESTC LUG Mirror site 软件源 -- Linux开源软件 系统镜像 教育网LinuxDeepin Opensuse LinuxMint Cygwin MariaDB GNU RFC-Documents Python Pypi ruby gem nodejs np" />
+  <script src="jquery-1.7.1.min.js" type="application/javascript"></script>
+  <!-- Main style sheets for CSS2 capable browsers -->
+  <style type="text/css" media="screen">
+  html{
+	  font-family:"微软雅黑";
+	  left:0px;
+	  right:0px;
+	  top:0px;
+  }
+::selection {
+		background:rgba(0,0,0,0.6); 
+		color:#eee;
+	}
+	::-moz-selection {
+		background:rgba(0,0,0,0.6); 
+		color:#eee;
+	}
+	::-webkit-selection {
+		background:rgba(0,0,0,0.6); 
+		color:#eee;
+	}
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+	background-color:rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+	background-color:rgba(0,0,0,0.6); 
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.5); 
+}
+ #hd{
+	  background:-webkit-gradient(linear, 0 0, left bottom, from(rgba(255,255,255,0.2)),color-stop(0.3,rgba(255,255,255,0.3)),to(rgba(255,255,255,0)));
+		background:-moz-linear-gradient(top, rgba(255,255,255,0.2),rgba(255,255,255,0.3) 30%,rgba(255,255,255,0));
+		background:-o-linear-gradient(top,rgba(255,255,255,0.2),rgba(255,255,255,0.3) 30%,rgba(255,255,255,0));
+   		background:linear-gradient(top,rgba(255,255,255,0.2), rgba(255,255,255,0.3) 30%,rgba(255,255,255,0));
+		z-index:10;
+		color:#FFF;
+		text-shadow:1px 1px 0px #000;
+  }
+  #hdbg,#hd{
+	   position:fixed;
+	  left:0px;
+	  right:0px;
+	  top:0px;
+	  height:80px;
+	  z-index:900;
+  }
+  #ft{
+	position: fixed;
+	left: 0px;
+	right:0px;
+	bottom: 0px;
+	height: 30px;
+	color: #fff;
+	z-index:900;
+  }
+  #ft a{
+	  color:#fff;
+  }
+  #ft a:hover{
+	  color:#fff !important;
+	  text-decoration:underline;
+  }
+  #info{
+	  margin-left:20px;
+	  margin-right:20px;
+	  padding-left:10px;
+	  padding-right:10px;
+	  top:90px;
+	  border-radius:10px;
+  }
+#info2{
+	  margin-left:20px;
+	  margin-right:20px;
+	  padding-left:10px;
+	  padding-right:10px;
+	  margin-top:50px;
+	margin-bottom:50px;
+	  border-radius:10px;
+  }
+  #datas{
+	  position:absolute;
+	  left:0px;
+	  right:0px;
+	  top:90px;
+  }
+  #data{
+	  padding-bottom:20px;
+	   margin-left:20px;
+	  margin-right:20px;
+	  margin-top:20px;
+	  padding-left:10px;
+	  padding-right:10px;
+	  z-index:20;
+  }
+  a{
+	  text-decoration:none;
+  }
+  a:hover{
+	  text-decoration:underline;
+  }
+  a:active{
+	  text-decoration:none;
+  }
+  #t{
+	  font-size:40px;
+	  cursor:pointer;
+	  display:inline-block;
+  }
+  #s{
+	  font-size:16px;
+	  margin-left:100px;
+	  
+  }
+  #hd img{
+	  position:fixed;
+	  right:10px;
+	  top:5px;
+	  cursor:pointer;
+  }
+  /* colors*/
+  .blue a:hover{
+	  color:#06C !important;
+  }
+  .blue a:active{
+	  color:#06F !important;
+  }
+  .blue a{
+	  color:#06C;
+  }
+  .blue #info{
+  -moz-box-shadow:0 0 0px 4px rgba(4,116,176,0.5);
+	  -webkit-box-shadow: 0 0 0px 4px rgba(4,116,176,0.5);
+	  box-shadow:  0 0 0px 4px rgba(4,116,176,0.5);
+	  background-color:rgba(4,116,176,0.2);
+  }
+  .blue #data{
+  color:#06C;
+  }
+  .blue #hd,.blue #ft{
+ 	background-color:#06C;
+  }
+  .deepblue a:hover{
+	  color:#069 !important;
+  }
+  .deepblue a:active{
+	  color:#069 !important;
+  }
+  .deepblue a{
+	  color:#069;
+  }
+  .deepblue #info{
+  -moz-box-shadow:0 0 0px 4px rgba(0,102,153,0.5);
+	  -webkit-box-shadow: 0 0 0px 4px rgba(0,102,153,0.5);
+	  box-shadow:  0 0 0px 4px rgba(0,102,153,0.5);
+	  background-color:rgba(0,102,153,0.2);
+  }
+  .deepblue #data{
+  color:#069;
+  }
+  .deepblue #hd,.deepblue #ft{
+ 	background-color:#069;
+  }
+  .sliver a:hover{
+	color:#444; 
+  }
+  .sliver a:active{
+	color:#444;
+	   }
+  .sliver a{
+	 color:#444;
+  }
+  .sliver #info,.sliver #info2{
+  -moz-box-shadow:0 0 0px 4px rgba(153,153,153,0.5);
+	  -webkit-box-shadow: 0 0 0px 4px rgba(153,153,153,0.5);
+	  box-shadow:  0 0 0px 4px rgba(153,153,153,0.5);
+	  background-color:rgba(153,153,153,0.2);
+	 color:#444;
+  }
+  .sliver #data{
+  
+  }
+  .sliver #hd,.sliver #ft{
+ 	background-color:#777;
+  }
+  .green a:hover{
+	  color:#060 !important;
+  }
+  .green a:active{
+	  color:#060 !important;
+  }
+  .green a{
+	  color:#060;
+  }
+  .green #info{
+  -moz-box-shadow:0 0 0px 4px rgba(0,153,51,0.5);
+	  -webkit-box-shadow: 0 0 0px 4px rgba(0,153,51,0.5);
+	  box-shadow:  0 0 0px 4px rgba(0,153,51,0.5);
+	  background-color:rgba(0,153,51,0.2);
+  }
+  .green #hd,.green #ft{
+ 	background-color:#060;
+  }
+  .mirrorlst{
+  	width:100%;
+	text-align:center;
+  }
+  .mirrorlst div{
+	  display:inline-block;
+	  width:220px;
+	  text-align:center;
+	  height:30px;
+	  padding-top:10px;
+  }
+  .isok{
+	  color:#090 !important;
+  }
+  .isup{
+	  color:#C90 !important;
+  }
+  .iserr{
+	  color:#F00  !important;
+  }
+  .cols0{
+	background-color:#ddd;
+  }
+  .cols0:hover,.cols1:hover{
+  	background-color:#444;
+	color:#eee !important;
+  }
+  .cols0:hover a,.cols1:hover a{
+	color:#eee  !important;
+	}
+ .cols0:hover a:hover,.cols1:hover a:hover{
+        color:#eee  !important;
+        }
+  .cols0:hover a:link,.cols1:hover a:link{
+        color:#eee  !important;
+        }
+   .cols0:hover a:active,.cols1:hover a:active{
+        color:#eee  !important;
+        }
+#seo{
+	position:absolute;
+	visibility:hidden;
+	display:none;
+}
+#scroll_comment{
+	position:fixed;
+	bottom:50px;
+	right:5px;
+	padding:5px;
+	border-radius:10px;
+	color:#eee;
+	background:#444;
+}
+#scroll_comment div{
+	display:inline-block;
+	margin:5px;
+	cursor:pointer;
+}
+#scroll_comment div:hover{
+	color:#fff;
+}
+  </style>
+<!--[if lte IE 9]>
+<style>
+html{
+overflow-x:hidden;
+}
+#hdbg,#hd{
+ position:absolute;
+	  left:0px;
+	  right:0px;
+	  top:0px;
+	  height:80px;
+width:9000px;
+  }
+#hd img{
+position:absolute;
+left:1200px;
+}
+#ft{
+margin-top:20px;
+	 position:absolute;
+width:9000px;
+bottom: -20px;
+  }
+#info{
+	  background-color:#0008f;
+	  border-radius:10px;
+  }
+</style>
+
+<![endif]-->
+</head>
+<body class="">
+<div id="seo">
+LUG 的软件源中心(LUG Mirror Site) 
+为广大的linux爱好者提供软件源服务,教育网用户可享受免费高速的软件源。
+目前我们提供了
+深度-LinuxDeepin软件源
+深度-LinuxDeepin系统镜像
+OpenSUSE软件源
+LinuxMint软件源
+LinuxMint系统镜像
+Cygwin MariaDB GNU RFC-Documents Python PyPI RubyGem Nodejs npm 以及 系统杀毒修复LiveCD（Windows可用）
+
+</div>
+ <div id="hdbg"></div>
+ <div id="hd">
+ <div id="t" onClick="window.location.href=\"/\""></div>
+ <div id="s">mirrors.uestc.xyz</div>
+ <img id="ico">
+ </div>
+ <div id="datas">
+ <div id="info">
+ </div>
+ <div id="data">
+ </div>
+
+ <div id="info2">
+	
+ </div>
+<!-- Duoshuo Comment div BEGIN -->
+	<div class="ds-thread"></div>
+<!-- Duoshuo Comment div END -->
+<div id="ft">
+<div id="scroll_comment">
+<div id="scroll_comment_top">Top</div>|
+<div id="scroll_comment_comment">Comment</div>
+
+</div>
+<select id="ft_lans" onChange="setlan(this);">
+    <option value="0">简体中文</option>
+    <option value="1">English</option>
+    <option value="2">繁體中文</option>
+ </select>
+ 
+  &nbsp;|&nbsp;<a href="http://uestc.xyz">UESTC LUG</a>&nbsp;|&nbsp;<a href="http://bbs.uestc.xyz" id="ft_sg"></a>&nbsp;|&nbsp;<a href="http://bbs.uestc.xyz" id="ft_ts"></a>
+<script language="javascript" type="text/javascript" src="http://js.users.51.la/15194744.js"></script>
+<noscript><a href="http://www.51.la/?15194744" target="_blank"><img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/15194744.asp" style="border:none" /></a></noscript>
+<script>
+function tocomment(){
+        window.scrollTo(0,document.getElementById('ds-thread').scrollHeight);
+}
+
+function totop(){
+	window.scrollTo(0,0);
+}
+if(window.addEventListener){
+	document.getElementById('scroll_comment_comment').addEventListener("click",tocomment,false);
+	document.getElementById('scroll_comment_top').addEventListener("click",totop,false);
+}else{
+	document.getElementById('scroll_comment_comment').attachEvent("onclick",tocomment);
+        document.getElementById('scroll_comment_top').attachEvent("onclick",totop);
+
+}
+$loadfix=1;
+$mdata=[
+{
+	url:"http://mirrors.scie.in",
+	name:["LUG 的软件源中心","LUG Mirror Site","LUG 的軟件源中心"],
+	color:"sliver",
+	ico:"lug"
+},{
+	url:"http://www.linuxdeepin.com",
+	name:["深度-LinuxDeepin软件源","LinuxDeepin's Mirror Site","深度-LinuxDeepin軟件源"],
+	color:"blue",
+	ico:"dp",
+	doc:[1,1,1]
+},{
+	url:"http://www.linuxdeepin.com",
+	name:["深度-LinuxDeepin系统镜像","LinuxDeepin's ISO Mirror","深度-LinuxDeepin系統鏡像"],
+	color:"blue",
+	ico:"dp",
+	doc:[1,1,1]
+},{
+	url:"http://www.opensuse.org",
+	name:["OpenSUSE软件源","OpenSUSE Mirror Site","OpenSUSE軟件源"],
+	color:"green",
+	ico:"os",
+	doc:["openSUSE","openSUSE","openSUSE"]
+},{
+	url:"http://www.linuxmint.com",
+	name:["LinuxMint软件源","LinuxMint Mirror Site","LinuxMint軟件源"],
+	color:"green",
+	ico:"lm",
+	doc:[0,0,0]
+},{
+	url:"http://www.linuxmint.com",
+	name:["LinuxMint系统镜像","LinuxMint ISO Mirror","LinuxMint系統鏡像"],
+	color:"green",
+	ico:"lm",
+	doc:[0,0,0]
+},{
+        url:"http://www.anthonos.org",
+        name:["AnthonOS镜像源","AnthonOS Mirror Site","AnthonOS軟体源"],
+        color:"blue",
+        ico:"anthon",
+        doc:[0,0,0]
+
+},{
+	url:"http://www.cygwin.com",
+	name:["Cygwin","Cygwin","Cygwin"],
+	color:"sliver",
+	ico:"cyg",
+	doc:[0,0,0]
+},{
+        url:"http://mariadb.org",
+        name:["MariaDB[Official]","MariaDB[Official]","MariaDB[Official]"],
+        color:"blue",
+        ico:"lug",
+        doc:[0,0,0]
+},{
+        url:"http://www.gnu.org/",
+        name:["GNU","GNU","GNU"],
+        color:"blue",
+        ico:"lug",
+        doc:[0,0,0]
+},{
+        url:"http://www.ietf.org/rfc.html",
+        name:["RFC文档","RFC-Documents","RFC檔案"],
+        color:"sliver",
+        ico:"lug",
+        doc:[0,0,0]
+},{
+        url:"http://www.raspbian.org/",
+        name:["Raspbian","Raspbian","Raspbian"],
+        color:"blue",
+        ico:"raspbian",
+        doc:[0,0,0]
+},{
+        url:"http://www.python.org/",
+        name:["Python PyPI","Python PyPI","Python PyPI"],
+        color:"blue",
+        ico:"lug",
+        doc:[0,0,0]
+},{
+        url:"http://www.ruby-lang.org/",
+        name:["RubyGem","RubyGem","RubyGem"],
+        color:"blue",
+        ico:"lug",
+        doc:["gem","gem","gem"]
+},{
+        url:"http://www.nodejs.org/",
+        name:["Nodejs npm","Nodejs npm","Nodejs npm"],
+        color:"green",
+        ico:"lug",
+        doc:["npm","npm","npm"]
+},{
+        url:"http://www.elementaryos.org/",
+        name:["elementaryos-cd","elementaryos-cd","elementaryos-cd"],
+        color:"sliver",
+        ico:"lug",
+        doc:["npm","npm","npm"]
+},{
+	url:"http://mirrors.scie.in/rescuecd",
+	name:["系统修复LiveCD","System Rescue LiveCD","系統修復LiveCD"],
+	color:"green",
+	ico:"lug",
+	doc:[0,0,0]
+}
+];
+$tittle=["LUG- 软件源中心","LUG-Mirror site","LUG-Mirror site 軟件源中心"];
+$lanlst=["简体中文","English","繁體中文"];
+$texta=[
+"UESTC LUG软件源中心<br>\n&nbsp;&nbsp;&nbsp;&nbsp;为广大的linux爱好者提供软件源服务。软件源由每日0点与12点自动同步，未同步完成则顺延至下一个更新周期~<br>\n欢迎写信给 uestclug@gmail.com 提出意见或建议，或告知所需镜像服务的地址信息，  <br/>=====================================================<br/>Notice    The Mirror Server Was Offline For Almost 20 Days.We are now back.<br/>Sorry For the inconvience<br><center>LUG研发部&运行部  敬上。</center><br>",
+"UESTC LUG Mirror Site<br>\n&nbsp;&nbsp;&nbsp;&nbsp;Provide Software source services for Linux lovers。Automatic synchronization is running every day on 24:00 and 12:00，if the last synchronization is not complete the synchronization will be postponed to the next cycle~<br>\nIf you have any comments or suggestions ,please write to uestclug@gmail.com .<br/>  =====================================================<br/>Notice    The Mirror Server Was Offline For Almost 20 Days.We are now back.<br/>Sorry For the inconvience<br><center>LUG R & D and Operation Department  Sincerely.</center><br>",
+"UESTC LUG軟件源中心<br>\n&nbsp;&nbsp;&nbsp;&nbsp;為廣大的linux愛好者提供軟件源服務。軟件源由每日0點與12點自動同步，未同步完成則順延至下一個更新周期~<br>\n歡迎寫信給 mgbbs.mobile@gmail.com，uestclug@gmail.com 提出意見或建議，或告知所需鏡像服務的地址信息，<br/> =====================================================<br/>Notice  The Mirror Server Was Offline For Almost 20 Days.We are now back.<br/>Sorry For the inconvience<br><center>LUG研發部&運行部  敬上。</center><br>"
+]
+$textb=["状态获取中","loading...","狀態獲取中"];
+$textc=["日期获取中","loading...","日期獲取中"];
+$textd=["进入","Enter","進入"];
+$texte=["使用帮助","Help","使用幫助"];
+$textf=["正在更新","Synchronizing","正在更新"];
+$textg=["获取","loading","獲取"];
+$texth=["已更新","Updated","已更新"];
+$texti=["错误","Error","錯誤"];
+$textj=["LUG软件源","LUG Mirror Site","LUG軟件源"];
+$textk=["校内其他优秀软件源：","Other good mirror sites in our school:","校內其他優秀軟件源："];
+$textl=["建议","Suggestion","建議"];
+$textm=["服务条款","Terms of Service","服務條款"];
+$text_1="<br>Ubuntu: <a href=\"http://ubuntu.dormforce.net\">ubuntu.dormforce.net</a><br><br>Archlinux: <a href=\"http://mirrors.stuhome.net/archlinux/\">mirrors.stuhome.net/archlinux</a><br><br>CentOS: <a href=\"http://mirrors.stuhome.net/centos/\">mirrors.stuhome.net/centos</a><br><br>Gentoo: <a href=\"http://mirrors.stuhome.net/gentoo/\">mirrors.stuhome.net/gentoo</a><br><br>Kernel: <a href=\"http://mirrors.stuhome.net/pub/\">mirrors.stuhome.net/pub</a><br><br>";
+$lan2=getCookie("language");
+	if($lan2==""){
+		$lan=(window.navigator.language)?window.navigator.language:window.navigator.browserLanguage;
+	switch($lan){
+	case "zh-CN":
+		$lan2=0;
+		break;
+	case "zh-TW":case "zh-HK":case "zh":
+		$lan2=2;
+		break;
+	default:
+		$lan2=1;
+		break;
+	}
+	
+}
+document.title=$tittle[$lan2];
+document.getElementById("ft_lans").value=$lan2;
+document.getElementById("t").innerHTML=$textj[$lan2];
+document.getElementById("info2").innerHTML=$textk[$lan2]+$text_1;
+document.getElementById("ft_sg").innerHTML=$textl[$lan2];
+document.getElementById("ft_ts").innerHTML=$textm[$lan2];
+$murl=["deepin","deepin-cd","opensuse","linuxmint","linuxmint-cd","anthon","cygwin","mariadb","gnu","rfc","raspbian","pypi","gem","npm","elementaryos-cd","rescuecd"];
+checkmirror();
+function setCookie(c_name,value,expiredays)
+{
+var exdate=new Date()
+exdate.setDate(exdate.getDate()+expiredays)
+document.cookie=c_name+ "=" +escape(value)+
+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+}
+function getCookie(c_name)
+{
+if (document.cookie.length>0)
+  {
+  c_start=document.cookie.indexOf(c_name + "=")
+  if (c_start!=-1)
+    { 
+    c_start=c_start + c_name.length+1 
+    c_end=document.cookie.indexOf(";",c_start)
+    if (c_end==-1) c_end=document.cookie.length
+    return unescape(document.cookie.substring(c_start,c_end))
+    } 
+  }
+return ""
+}
+function setlan(e){
+	if($loadfix==1){
+	setCookie("language",e.value,365);
+	window.location.reload();
+	}
+}
+function checkmirror(){
+	document.body.className="sliver";
+	document.getElementById("ico").src="/ico/lug.png";
+	document.getElementById("info").innerHTML=$texta[$lan2];
+	var $opt="";
+	for($i=0;$i<$murl.length;$i++){
+		var $mirrorcols=($i%2==0)?"cols0":"cols1";
+		$opt=$opt+"<div id=\"mirror_"+$murl[$i]+"\" class=\"mirrorlst "+$mirrorcols+"\"><div><a href=\""+$murl[$i]+"\">"+$mdata[$i+1].name[$lan2]+"</a></div><div id=\"mirror_"+$i+"_statue\">"+$textb[$lan2]+"</div><div id=\"mirror_"+$i+"_date\">"+$textc[$lan2]+"</div><div id=\"mirror_"+$i+"_go\"><a href=\""+$murl[$i]+"\">"+$textd[$lan2]+"</a></div><div id=\"mirror_"+$i+"_help\">[<a href=\"/doc/"+$mdata[$i+1].doc[1]+"/en.html\">HELP</a>|<a href=\"/doc/"+$mdata[$i+1].doc[0]+"/zh-cn.html\">使用帮助</a>|<a href=\"/doc/"+$mdata[$i+1].doc[2]+"/zh-tw.html\">使用幫助</a>]</div></div>";
+	}
+	document.getElementById("data").innerHTML=$opt;
+	checkstatue(0);
+}
+function checkstatue(ipt){
+	if(!$murl[ipt]){
+		return;
+	}
+	if($murl[ipt]!="rescuecd"){
+	$.ajax({
+                 type:"GET",
+                 dataType:"html",
+                 url:"statue/"+$murl[ipt]+".lock?"+Math.random(),
+                 timeout:300000,	 
+                 success:function(data,textStatus){
+					document.getElementById("mirror_"+ipt+"_statue").innerHTML=$textf[$lan2];
+					document.getElementById("mirror_"+ipt+"_statue").className="isup";
+					checkdate(ipt);
+	             },
+				 //Ajax请求超时，继续查询
+	             error:function(XMLHttpRequest,textStatus,errorThrown){
+					document.getElementById("mirror_"+ipt+"_statue").innerHTML=$textg[$lan2];
+					document.getElementById("mirror_"+ipt+"_statue").className="isok";
+					checkdate(ipt);
+	             }
+                 
+		});
+	}else{
+		document.getElementById("mirror_"+ipt+"_statue").innerHTML=$texth[$lan2];
+		document.getElementById("mirror_"+ipt+"_statue").className="isok";
+		document.getElementById("mirror_"+ipt+"_date").innerHTML="2013-02-26 12:01:05+08:00";
+	}
+		
+}
+function checkdate(ipt){
+document.getElementById("mirror_"+ipt+"_date").innerHTML=$textg[$lan2];
+		$.ajax({
+                 type:"GET",
+                 dataType:"html",
+                 url:"statue/"+$murl[ipt]+".ver?"+Math.random(),
+                 timeout:300000,	 
+                 success:function(data,textStatus){
+					document.getElementById("mirror_"+ipt+"_date").innerHTML=data;
+					checkstatue(ipt+1);
+					if(document.getElementById("mirror_"+ipt+"_statue").innerHTML==$textg[$lan2]){
+						document.getElementById("mirror_"+ipt+"_statue").innerHTML=$texth[$lan2];
+					}
+	             },
+				 //Ajax请求超时，继续查询
+	             error:function(XMLHttpRequest,textStatus,errorThrown){
+					 document.getElementById("mirror_"+ipt+"_date").innerHTML=$texti[$lan2];
+					document.getElementById("mirror_"+ipt+"_statue").innerHTML=$texti[$lan2];
+					document.getElementById("mirror_"+ipt+"_statue").className="iserr";
+					checkstatue(ipt+1);
+	             }
+                 
+		});
+}
+if(navigator.userAgent.indexOf("360SE")>0){
+    alert('系统检测出来你使用了360流氓浏览器,请先卸载或改用Firefox（或Chrome）等再行访问本站，谢谢合作！');
+}
+</script>
+<!-- Duoshuo Comment js BEGIN -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"lug"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- Duoshuo Comment js END -->
+</div>
